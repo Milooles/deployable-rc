@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rc-rubber-ducky-deploy",
+  "private_key_id": "6a72f2f25c999b1c1739f37f1745d063146ed91f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDFCOcT9xpwWfoG\nuo9P1VKx5TG1UjYo8BGAlDFuS/XGicTbswpGZ+W8E4NNt+N4F+KlpSUWgSltygvf\nPSbWktxG7XE/V5yT9/jg2K7prlnl+/55Z+TZNq9bVQn75WCIX5IFawBMS5eZW5aF\ntsIw+iymhqBjLVjgxbPyschkb5Y0GxlkJUUtoZNrPWaktgwuXXscZaG5PBrYRjmA\nszdQDgPRFfiz3DHrkVFPN5tx0KVc6iPuP3bGpIwxysrCI8x1U09fXnMjU5rAnX82\nDsgevrOkZFuy8/agYQei3hz/ls7T8mLSS+v4xxrxLp1YwpAu487AERmcijjmxAY1\njVzyrEPHAgMBAAECggEABmgB3LgnOmmag6x+K19+vFJSOZiDh/TiRMwiB/mH811t\nsqJRc7Towc2KnTTHkb3eZySwSNkzPSLEHGKIcufnKevfcj/0KIAireuC/bhnAN90\nHdi/FpbnawX1TfozwiCwBpASPD4lnt1c+VpWBFyl+1YbkeNFZVgtlSGq/ST+/RD+\nhl/i6nckV1B/Twbal4q4pkpc1X/qNnAJ9idAPDYWUt966x0lyV10YpPcJJcs73Xn\nfvm2WWgHVOkE9ssUuvgVBOItbJPhynvAIxENzR7zCGdRpIsjpTxwKEL4MrLRlXKB\n4NeUQqLPxNvrQbV941S8W6gNvCweHu4zTy0gtoCAQQKBgQDwHWMP/fOl5XUwALJq\naPkH3k0Z83TOSoaPKpItrbANQ9xFJElsvV+Ip8r0wLdzrRAbzUYSQk8MZ/P2420m\nJwxqjGrZnE5N4groMZzmbVZN3rp7Rp+b6wRyLdi8TXeCPxh+xQsIY+gAjeoggaAf\nOkKwPvE++DLs0y+8H6cziGOmBwKBgQDSEehHC4KUiyXUD/DvjgKITksYPQdEvgPb\nfbCeiISfy3Y8xTVQCqn0YaIbeX663xD2GiQkztsgkG4FFxL5mO1KTpzmtQ7Tw37z\n0/wzFmBFAunEFiJ5I5nO8MVT1y8GESA206vNT0LkNCt25ebrev3x/DMCcQS+yP5I\n60GzzUEEQQKBgG8QiMPa6Zpw2pXLnLtPtvEGyI8aZ4sMOdV7EYaDco2QOBDbSgM8\nTTY+tsgjZDfjczII70J+3WWVp+kpJVGiekHGlZ32iNnJltX0LOkA5gy623MuJaHP\nQY0226uuAXuDh+cLaaEF5UhsXEGQ8+m93x763kgMMjINNWVFFuflTIJ9AoGAR8CI\nFyQuUPCKVjmvsRNPeCFN8xR9VBSXGrR+zFeS/UWwuCcgA5vw2yEyDrJcABZLI9Rf\n/haNsDzE54YvHAQJIPVjEEZNrzU6Oqxwmz6MWWYaVLi+w6POWGnS7MU2MZtN5ow8\nRV9KWModAnqaelpDPRFIlw/lcAkVGfEJOxHjoEECgYBLUHltyzXpLrQ+6LwHTFIG\n5xMee4bcaKHlumBRJSFR3dEBYxxrjGJOpKDcd8cCBp3HiJb1Fc9+iqaMTDdAoBd8\ncjn4u4NaaMTPiBG25Dgg97TqxqOi8iXjawIFimh7J9gwyLH3+b3bg6MuxYlJmDXm\nkhHvzq0Who4j0+WpFnmk5A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@rc-rubber-ducky-deploy.iam.gserviceaccount.com",
+  "client_id": "102696054710569621167",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40rc-rubber-ducky-deploy.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
