@@ -1,10 +1,10 @@
 sleep 5
 
-echo 1
+osascript -e 'display notification "ello" with title "Hello"'
 
 sleep 5
 
-echo 2
+osascript -e 'display notification "ello" with title "Hello2"'
 
 # install_brew() {
 #     cd ~
