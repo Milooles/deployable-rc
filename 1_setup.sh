@@ -1,22 +1,7 @@
 sleep 5
 
-install_brew() {
-    cd ~
-
-    mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-
-    echo '
-    export HOMEBREW_PREFIX="$HOME/.homebrew"
-    export PATH="$HOMEBREW_PREFIX/bin:$PATH"
-    export MANPATH="$HOMEBREW_PREFIX/share/man:$MANPATH"' >>~/.zshrc
-
-    source ~/.zshrc
-}
-
-install_brew
-
-# for funsies
-brew install pyenv
+# install pyenv
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 pyenv install 3.13
 
 # cus it dont come with python
