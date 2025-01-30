@@ -1,4 +1,6 @@
 import sys
 import os
 
-os.system(f"osascript -e 'display notification \"{sys.argv[1:]}\"'")
+def main():
+    sys.argv.pop(0)
+    os.system(f"osascript -e 'display notification \"{" ".join(sys.argv)}\"'")

