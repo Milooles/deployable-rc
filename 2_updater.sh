@@ -9,5 +9,5 @@ run() {
 while true; do
     run
 
-    sleep 30
+    # sleep 30
 done
