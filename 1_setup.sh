@@ -2,6 +2,15 @@ sleep 5
 
 # install pyenv
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+echo '
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"' >~/.zshrc
+
+source ~/.zshrc
+
 pyenv install 3.13
 
 # cus it dont come with python
