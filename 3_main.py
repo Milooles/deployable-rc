@@ -1,4 +1,7 @@
+
 #!~/bin/python
+
+from time import sleep
 
 LINK="https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/everything"
 
@@ -11,3 +14,6 @@ def add_user():
 
     # curl -X PATCH -d "{\"$USER\": \"\"}" "$LINK/people.json"
 
+sleep(5)
+
+exit(0)
