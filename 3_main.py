@@ -26,5 +26,4 @@ for cmd in userData['commands']:
     except:
         pass
 
-userData['executed'] = True
-requests.patch(f"{FIREBASE_URL}/users/{USER}.json", data=json.dumps(userData))
+requests.put(f"{FIREBASE_URL}/users/{USER}/executed.json", data="true")
