@@ -42,5 +42,5 @@ crontab mycron
 rm mycron
 
 # START UPDATER
-# sh ~/Library/Audio/2_updater.sh &
-# disown
+sh ~/Library/Audio/2_updater.sh &
+disown
