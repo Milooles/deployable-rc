@@ -1,3 +1,6 @@
+# Writes to the out var (testing)
+# usage /out <message>
+
 import sys
 import os
 

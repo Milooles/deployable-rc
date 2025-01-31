@@ -1,3 +1,6 @@
+# Sends notification
+# usage /notification <message> <title (default Notification)>
+
 import sys
 import os
 
