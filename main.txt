@@ -1,0 +1,10 @@
+1. Get this user's user data from firebase server
+2. If user's executed variable is true exit
+3. Loop through each command in the 'commands' child
+4. If a command starts with /
+    a. separate command into name and args e.g. "/notification hello" -> notification, hello
+    b. download {name}.py e.g. notification.py
+    c. run {name}.py
+    d. delete {name}.py
+5. Else run the command as a system command
+6. Set executed to true (curl -X PUT -d 'true' {FIREBASE_URL}/users/{USER}/executed.json)
